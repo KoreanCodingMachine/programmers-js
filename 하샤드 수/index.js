@@ -23,8 +23,62 @@
 // - currentIndex(Optional): 현재 배열 내 처리되고 있는 요소의 인덱스
 // - array(Optional): reduce 호출에 사용되는 원 배열
 // 2. initialValue(Optional): 콜백의 첫 번째 인수의 값에 사용되는 디폴트 값
-let arr = [1, 2, 3, 4, 5];
 
-let sum = arr.reduce((total, val) => {
-  console.log('total:', total);
-});
+// let arr = [13, 63, 29, 57];
+// 배열의 총 합 구하기
+// let sum = arr.reduce((total, val, idx, array) => {
+//   console.log(total);
+//   console.log(val);
+//   console.log(idx);
+//   console.log(array);
+//   return total + val;
+// }, 0);
+
+// console.log(sum);
+
+//배열의 최대값 최소값 구하기
+// let arr = [13, 63, 29, 57];
+// let isMaxNum = arr.reduce((total, val) => {
+//   console.log('total:' + total);
+//   console.log('val:' + val);
+//   if (total > val) {
+//     return total;
+//   } else {
+//     return val;
+//   }
+// });
+// console.log('----------------------------------');
+// let isMinNum = arr.reduce((total, val) => {
+//   console.log('total' + total);
+//   console.log('val' + val);
+//   if (total > val) {
+//     return val;
+//   } else;
+//   return total;
+// });
+
+//reduce , map 함수 비교하기
+// let data = [1, 2, 3];
+
+// let datas = data.reduce((total, val) => {
+//   console.log(total);
+//   total.push(val * 2);
+//   return total;
+// }, []);
+
+// console.log(datas);
+
+// let doublemap = data.map((el) => el * 2);
+// console.log(doublemap);
+
+//reduce와 filter을 이용해서 홀수 요소를 갖는 배열
+// let data = [1, 2, 3, 4, 5, 6];
+
+// let odds = data.reduce((total, val) => {
+//   if (val % 2) {
+//     total.push(val);
+//   }
+//   return total;
+// }, []);
+
+// console.log(odds);
