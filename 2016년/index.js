@@ -4,5 +4,15 @@
 // 입니다. 예를 들어 a=5, b=24라면 5월 24일은 화요일이므로 문자열 "TUE"를 반환하세요.
 
 function solution(a, b) {
-  for (let i = 0; i <= 365; i++) {}
+  let answer = '';
+  const month = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  const date = ['FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU'];
+  let sum = 0;
+  for (let i = 1; i < a; i++) {
+    sum += month[i - 1];
+  }
+  answer = date[(sum + b - 1) % 7];
+  return answer;
 }
+
+solution(2, 29);
