@@ -8,7 +8,6 @@
 로또가 당첨될 최고의 경우의수(0을 포함한)와 최소의 경우의수를 저장할 변수를 선언
 indexOf() 메서드를 이용해 lottos 와 win_nums가 일치하는 수 -> min
 min + 0의 개수를 -> max에 담아서 return
-
 */
 
 function solution(lottos, win_nums) {
